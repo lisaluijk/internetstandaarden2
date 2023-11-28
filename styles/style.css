@@ -1,0 +1,182 @@
+/* kleurtjess
+    grijs = #363636
+    lichter grijs = #6E6E6E
+    roestig = #C75218
+    yellow de pellow = #DEAA1B
+    greenscreen = #B6E3AC
+    margin:0; 
+   padding:0; 
+
+   https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+   https://tinyjpg.com/ 
+   https://www.cutthecode.com/about-us 
+   https://css-tricks.com/archives/page/2/ 
+   https://www.awwwards.com/sites/viens-la-3 
+   https://viens-la.com/en/ 
+   
+*/
+
+/* algemene basis opmaak */
+
+* {
+   color: white;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #363636;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* opmaak van de elementen */
+
+h1 {
+    color: #C75218;
+    margin: 20;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+h2,h3,h4 {
+    color: #DEAA1B; 
+}
+
+a.button:link, a.button:visited {
+    background-color: #6E6E6E;
+    border: 2px, solid #DEAA1B;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+a.button:hover {
+    background-color: #DEAA1B;
+}
+
+a.button:active {
+    background-color: #C75218;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+/* navigatie */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    background-color: #6E6E6E;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #363636;
+}
+
+.active {
+    background-color: #C75218;
+}
+
+/* homepage galerij preview */
+/*opmaak*/
+
+div.gallery {
+    border: 2px solid #6E6E6E;
+}
+
+div.gallery:hover {
+    border: 2px solid #DEAA1B;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+/*aangepaste maat*/
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 900px) {
+    .responsive{
+        width: 49.99999999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+    width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display:  table;
+    clear: both;
+}
+
+
+
+/* galerij overflow scrol-element */
+
+.wrap {
+    width: 100%;
+    overflow-x: scroll;
+}
+figure{ 
+    display: flex;
+    margin:0; 
+    padding:0; 
+}
+
+figure img {
+     height: 400px;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 25px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #6E6E6E; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #555; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #DEAA1B; 
+  }
