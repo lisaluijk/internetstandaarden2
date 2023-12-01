@@ -37,10 +37,13 @@ img {
 
 h1 {
     color: #C75218;
-    margin: 20;
-    padding: 0;
+    padding-top: 30px;
     display: flex;
     justify-content: center;
+}
+
+header {
+    background-color: #252525;
 }
 
 h2,h3,h4 {
@@ -96,6 +99,27 @@ nav li a:hover:not(.active) {
     background-color: #C75218;
 }
 
+/* homepage show met wat ik heb gemaakt */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+   /*  misschien nog een boxshadow? */
+    display: none;
+    position: absolute;
+    background-color: #6E6E6E;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 /* homepage galerij preview */
 /*opmaak*/
 
@@ -111,6 +135,7 @@ div.gallery img {
     width: 100%;
     height: auto;
 }
+
 div.desc {
     padding: 15px;
     text-align: center;
