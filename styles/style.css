@@ -48,6 +48,12 @@ header {
 
 h2,h3,h4 {
     color: #DEAA1B; 
+    margin: 20px;
+    margin-top: 50px;
+}
+
+p {
+    margin: 20px;
 }
 
 a.button:link, a.button:visited {
@@ -77,7 +83,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden; 
-    background-color: #6E6E6E;
+    background: #6E6E6E;
 }
 
 nav li {
@@ -87,18 +93,49 @@ nav li {
 nav li a {
     display: block;
     text-align: center;
-    padding: 14px 16px;
+    padding:  1em;
     text-decoration: none;
+    transition: all 350ms linear;
+   
 }
 
 nav li a:hover:not(.active) {
-    background-color: #363636;
+    background: #363636;
 }
 
 .active {
-    background-color: #C75218;
+    background: #C75218;
 }
 
+/* welkom header */
+
+/* .welkom {
+    position: relative;
+    margin-top: 20px;
+}
+
+.welkom h2, .welkom p {
+    color: red;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.welkomst {
+    opacity: 0.3;
+}
+
+.banner {
+    background-image: url("images/kwasten.jpg");
+}
+
+.banner h2, p {
+    color: white; 
+} */
+
+
+        
 /* homepage show met wat ik heb gemaakt */
 
 .dropdown {
