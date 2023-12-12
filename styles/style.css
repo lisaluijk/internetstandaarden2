@@ -78,7 +78,7 @@ ul {
 
 /* navigatie */
 
-nav ul {
+header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -86,11 +86,13 @@ nav ul {
     background: #6E6E6E;
 }
 
-nav li {
-    float: left;
+
+.navi  {
+   display: flex;
+   flex-direction: row;
 }
 
-nav li a {
+header nav li a {
     display: block;
     text-align: center;
     padding:  1em;
@@ -99,13 +101,31 @@ nav li a {
    
 }
 
-nav li a:hover:not(.active) {
+header nav li a:hover:not(.active) {
     background: #363636;
 }
 
 .active {
     background: #C75218;
 }
+
+/* footer */
+
+footer {
+    background-color: #C75218;
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav ul {
+   list-style-type: none;
+}
+
+footer p {
+   text-align: center;
+}
+
+
 
 /* welkom header */
 
