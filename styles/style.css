@@ -1,21 +1,3 @@
-/* kleurtjess
-    grijs = #363636
-    lichter grijs = #6E6E6E
-    roestig = #C75218
-    yellow de pellow = #DEAA1B
-    greenscreen = #B6E3AC
-    margin:0; 
-   padding:0; 
-
-   https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
-   https://tinyjpg.com/ 
-   https://www.cutthecode.com/about-us 
-   https://css-tricks.com/archives/page/2/ 
-   https://www.awwwards.com/sites/viens-la-3 
-   https://viens-la.com/en/ 
-   
-*/
-
 /* algemene basis opmaak */
 
 * {
@@ -56,26 +38,6 @@ p {
     margin: 20px;
 }
 
-.basic-link:hover {
-    color: #DEAA1B;
-}
-
-a.knopje:link, a.knopje:visited {
-    background-color: #6E6E6E;
-    border: 2px, solid #DEAA1B;
-    padding: 10px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-a.knopje:hover {
-    background-color: #DEAA1B;
-}
-
-a.knopjw:active {
-    background-color: #C75218;
-}
-
 ul {
     list-style-type: circle;
 }
@@ -84,7 +46,6 @@ ul {
     font-weight: bold;
     color: #e1d2a8;
 }
-
 
 /* navigatie */
 
@@ -98,7 +59,6 @@ header nav ul {
     background: #6E6E6E;
 }
 
-
 header nav li a {
     display: block;
     text-align: center;
@@ -108,7 +68,7 @@ header nav li a {
    
 }
 
-header nav li a:hover:not(.active) {
+header nav li a:hover:not(.actief) {
     background: #363636;
 }
 
@@ -145,16 +105,7 @@ footer nav a {
 footer p {
    text-align: center;
 }
-
-img.bleektrui {
-    width: 25%;
-    height: auto;
-}
-
-/* banner*/
-
-
-        
+      
 /* overzicht met mogelijke technieken */
 
 .titel-technieken {
@@ -202,12 +153,7 @@ img.bleektrui {
     }
 }
 
-  
-  
-
-
 /* homepage galerij preview */
-/*opmaak*/
 
 .galerij-preview {
     border: 2px solid #6E6E6E;
@@ -254,7 +200,6 @@ img.bleektrui {
 }
 
 
-
 /* galerij overflow scrol-element */
 
 .wrap {
@@ -272,6 +217,8 @@ figure img {
      height: 400px;
 }
 
+/* opmaak galerij */
+
 .tasjes {
     padding: 40px 0;
     display: flex;
@@ -279,6 +226,7 @@ figure img {
 
 }
 
+/* opmaak tips en tricks */
 
 .sectie {
     background-color: #494949;
@@ -290,6 +238,11 @@ figure img {
 .tip {
     display: flex;
     flex-direction: row;
+}
+
+img.bleektrui {
+    width: 25%;
+    height: auto;
 }
 
 /* scrollbar */
