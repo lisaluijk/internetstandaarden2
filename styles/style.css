@@ -56,7 +56,11 @@ p {
     margin: 20px;
 }
 
-a.button:link, a.button:visited {
+.basic-link:hover {
+    color: #DEAA1B;
+}
+
+a.knopje:link, a.knopje:visited {
     background-color: #6E6E6E;
     border: 2px, solid #DEAA1B;
     padding: 10px 20px;
@@ -64,11 +68,11 @@ a.button:link, a.button:visited {
     text-decoration: none;
 }
 
-a.button:hover {
+a.knopje:hover {
     background-color: #DEAA1B;
 }
 
-a.button:active {
+a.knopjw:active {
     background-color: #C75218;
 }
 
@@ -76,9 +80,17 @@ ul {
     list-style-type: circle;
 }
 
+.highlight {
+    font-weight: bold;
+    color: #e1d2a8;
+}
+
+
 /* navigatie */
 
 header nav ul {
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -86,11 +98,6 @@ header nav ul {
     background: #6E6E6E;
 }
 
-
-.navi  {
-   display: flex;
-   flex-direction: row;
-}
 
 header nav li a {
     display: block;
@@ -105,7 +112,7 @@ header nav li a:hover:not(.active) {
     background: #363636;
 }
 
-.active {
+.actief {
     background: #C75218;
 }
 
@@ -115,110 +122,132 @@ footer {
     background-color: #C75218;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
+}
+
+footer nav {
+    background-color: #6E6E6E;
 }
 
 footer nav ul {
    list-style-type: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+}
+
+footer nav a {
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 20px;
 }
 
 footer p {
    text-align: center;
 }
 
-
-
-/* welkom header */
-
-/* .welkom {
-    position: relative;
-    margin-top: 20px;
+img.bleektrui {
+    width: 25%;
+    height: auto;
 }
 
-.welkom h2, .welkom p {
-    color: red;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-}
-
-.welkomst {
-    opacity: 0.3;
-}
-
-.banner {
-    background-image: url("images/kwasten.jpg");
-}
-
-.banner h2, p {
-    color: white; 
-} */
+/* banner*/
 
 
         
-/* homepage show met wat ik heb gemaakt */
+/* overzicht met mogelijke technieken */
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+.titel-technieken {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.dropdown-content {
-   /*  misschien nog een boxshadow? */
+.technieken{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.img-beschrijving {
+    display: inline-block;
+    width: 23%;
+    height: auto;
+}
+
+.beschrijving {
     display: none;
-    position: absolute;
+    text-align: center;
+    padding: 10px 0;
     background-color: #6E6E6E;
-    min-width: 200px;
     z-index: 1;
 }
 
-.dropdown:hover .dropdown-content {
+.img-beschrijving:hover .beschrijving {
     display: block;
+    animation: slide-down 1s 1;
 }
+
+@keyframes slide-down {
+    0% {
+        background-color: #C75218;
+        transform: translate(0px,-60px);
+    }
+
+    100% {
+        background-color: #6E6E6E;
+        transform: translate(0px,0px);
+    }
+}
+
+  
+  
 
 
 /* homepage galerij preview */
 /*opmaak*/
 
-div.gallery {
+.galerij-preview {
     border: 2px solid #6E6E6E;
 }
 
-div.gallery:hover {
+.galerij-preview:hover {
     border: 2px solid #DEAA1B;
 }
 
-div.gallery img {
+.galerij-preview img {
     width: 100%;
     height: auto;
 }
 
-div.desc {
+.ondertitel {
     padding: 15px;
     text-align: center;
-}
+} 
 
 /*aangepaste maat*/
-.responsive {
+.galerij-preview {
     padding: 0 6px;
     float: left;
-    width: 24.99999%;
+    width: 24.9999%;
 }
 
 @media only screen and (max-width: 900px) {
-    .responsive{
-        width: 49.99999999%;
+    .galerij-preview{
+        width: 49.9999%;
         margin: 6px 0;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .responsive {
+    .galerij-preview {
     width: 100%;
     }
 }
 
-.clearfix:after {
+.afsluiting-galerij:after {
     content: "";
     display:  table;
     clear: both;
@@ -232,6 +261,7 @@ div.desc {
     width: 100%;
     overflow-x: scroll;
 }
+
 figure{ 
     display: flex;
     margin:0; 
@@ -240,6 +270,26 @@ figure{
 
 figure img {
      height: 400px;
+}
+
+.tasjes {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.sectie {
+    background-color: #494949;
+    border-radius: 25px;
+    margin: 20px;
+    padding: 10px 30px 40px;
+}
+
+.tip {
+    display: flex;
+    flex-direction: row;
 }
 
 /* scrollbar */
